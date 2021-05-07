@@ -1,0 +1,570 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Container Styles */
+.content {
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+}
+
+/* Navigation Tooltip Styling */
+#fp-nav ul li .fp-tooltip {
+  color: white;
+  background-color: #222;
+  padding: 10px;
+}
+
+/* Navigation Styling */
+#fp-nav.fp-left {
+  background-color: #ed2d34;
+  left: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 60px;
+}
+
+/* Product Page Styling, needed for modal */
+#productPage {
+  position: relative;
+}
+
+/* Coloring the navbar icons white */
+#fp-nav ul li a span,
+#fp-nav ul li a.active span {
+  background-color: white;
+  color: black;
+}
+
+/* Hide title and buttons */
+#product-slider h3,
+#product-slider button {
+  display: none;
+}
+
+/* Product slider active item setting */
+#product-slider .active h3,
+#product-slider .active button {
+  display: block;
+}
+
+/* Modal Styling */
+#modal {
+  display: none;
+}
+
+#modal.modal-active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  z-index: 100;
+  width: 50vw;
+  height: 50vh;
+  transform: translate(-50%, -50%);
+}
+/* Used to prevent the carousel from stretching the screen */
+.owl-carousel {
+  overflow: hidden;
+}
+
+/* Used to scale down the home image. You can remove this. */
+img {
+  max-width: 40vw;
+}
+
+/* PLEASE START YOUR STYLES UNDERNEATH THIS */
+
+body {
+  font-family: sans-serif;
+}
+.section {
+  background-image: url(./banner.jpg);
+}
+
+#productPage.content {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+.home-heading {
+  font-size: 60px;
+  color: rgb(255, 0, 149);
+  display: flex;
+  flex-direction: column;
+}
+
+.sub {
+  color: rgb(0, 255, 21);
+}
+
+.home-details {
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+}
+
+.btn {
+  background: whitesmoke;
+  border-radius: 20px;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  color: black;
+  width: 35%;
+  height: 45%;
+  text-decoration: none;
+  padding: 10px;
+  margin: 20px;
+  font-weight: bolder;
+}
+
+.btn:hover {
+  background: rgb(132, 245, 245);
+  color: grey;
+}
+.owl-carousel {
+  max-width: 700px;
+}
+
+.page-heading {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#productPage{
+  background-image: url();
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page-header-container{
+  font-family: sans-serif;
+  font-size: 32px;
+}
+
+.product-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: opx 60px 30px 60px;
+  margin-bottom: 20px;
+}
+
+.counter {
+  margin-top: 25px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.counter,
+div{
+  margin-right: 60px;
+}
+
+.counter-number{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.counter-text{
+  font-size: 16px;
+}
+
+.product-btn{
+  border: solid 2px rgb(6, 222, 230);
+  border-radius: 40px;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: blue;
+  font-family: sans-serif;
+  font-size: 16px;
+  transition:  0.3s ease-in;
+}
+
+.product-btn:hover{
+  background-color: #ed2d34;
+  color: white;
+  border:solid 2px #ed2d34;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-img{
+  max-width: 250px;
+}
+.product h3{
+  font-family: sans-serif;
+  font-size: 28px;
+  margin: 20px 0;
+}
+#product-slider {
+  padding-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* PRODUCT SLIDER */
+#product-slider .product {
+/* width: 320px; */
+margin-top: 10%;
+text-align: center;
+}
+
+#product-slider .product img {
+width: 100%;
+}
+
+#product-slider .product h3 {
+font-size: 30px;
+margin-top: 30px;
+font-weight: bold;
+}
+
+#product-slider .product .btn {
+margin: 20px auto;
+}
+
+
+/* MODAL STYLES */
+#modal {
+width: 90%;
+border: none;
+padding: 2.5%;
+max-width: 1200px;
+/* WHY IS IT NOT IN THE ABSOLUTE CENTER? */
+/* HOW DO YOU MAKE THE BACKGROUND GREY WHEN IT SHOWS UP? */
+}
+
+/* CLOSE MODAL BUTTON */
+#modal .close-btn {
+top: 20px;
+right: 30px;
+width: 30px;
+border: none;
+height: 30px;
+font-size: 40px;
+cursor: pointer;
+position: absolute;
+background: #ffffff;
+}
+
+#modal .product-details {
+display: flex;
+justify-content: space-between;
+}
+
+#modal .product-details .product-images-container {
+width: 50%;
+padding-top: 50px;
+}
+
+#modal .product-details .product-images-container .main-image {
+width: 100%;
+margin-bottom: 50px;
+}
+
+#modal .product-details .product-images-container .alt-product-images {
+display: flex;
+justify-content: space-between;
+}
+
+#modal .product-details .product-images-container .alt-product-images img {
+width: 33.33%;
+margin-right: 15px;
+}
+
+#modal .product-details .product-images-container .alt-product-images img:not(:first-child) {
+opacity: .5;
+}
+
+#modal .product-details .product-details-container {
+width: 50%;
+padding: 2.5%;
+}
+
+#modal .product-details .product-details-container .page-heading {
+font-size: 18px;
+font-weight: 600;
+}
+
+#modal .product-details .product-details-container .page-subtitle {
+font-size: 42px;
+font-weight: bold;
+}
+
+#modal .product-details .product-details-container .product-description {
+margin: 50px 0;
+font-size: 18px;
+font-weight: 300;
+}
+
+/* PRODUCT SIZE CONTAINER */
+#modal .product-details .product-details-container .product-size-container {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+
+#modal .product-details .product-details-container .product-size-container h6 {
+font-size: 20px;
+font-weight: 300;
+color: #ed2d34;
+margin-right: 20px;
+}
+
+#modal .product-details .product-details-container .product-size-container div {
+width: 100%;
+display: flex;
+justify-content: space-around;
+}
+
+#modal .product-details .product-details-container .product-size-container div p {
+opacity: .5;
+}
+
+/* PRODUCT QUANTITY CONTAINER AND COLOR*/
+#modal .product-details .product-details-container .product-quantity-and-color-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+/* PRODUCT QUANTITY CONTAINER */
+#modal .product-details .product-details-container .product-quantity-container {
+display: flex;
+align-items: center;
+margin-bottom: 20px ;
+}
+
+#modal .product-details .product-details-container .product-quantity-container h6 {
+font-size: 20px;
+font-weight: 300;
+color: #ed2d34;
+margin-right: 20px;
+}
+
+#modal .product-details .product-details-container .product-quantity-container .quantity-container {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+
+#modal .product-details .product-details-container .product-quantity-container .quantity-container i {
+opacity: .5;
+padding: 5px;
+}
+
+#modal .product-details .product-details-container .product-quantity-container .quantity-container input {
+width: 35px;
+opacity: .5;
+border: none;
+font-size: 18px;
+font-weight: 300;
+text-align: center;
+}
+
+/* PRODUCT COLOR CONTAINER */
+#modal .product-details .product-details-container .product-color-container {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+
+#modal .product-details .product-details-container .product-color-container h6 {
+font-size: 20px;
+font-weight: 300;
+color: #ed2d34;
+margin-right: 20px;
+}
+
+#modal .product-details .product-details-container .product-color-container .color-container {
+display: flex;
+align-items: center;
+}
+
+#modal .product-details .product-details-container .product-color-container .color-container .box{
+width: 20px;
+height: 20px;
+margin-right: 10px;
+}
+
+#modal .product-details .product-details-container .product-color-container .color-container .box.white {
+background: #ffffff;
+border: 1px solid #000000;
+}
+
+#modal .product-details .product-details-container .product-color-container .color-container .box.blue {
+background: #90cdf0;
+}
+
+#modal .product-details .product-details-container .product-color-container .color-container .box.peach {
+background: #f58357;
+}
+
+/* PRODUCT PRICE CONTAINER */
+#modal .product-details .product-details-container .product-price-container .product-price {
+margin: 25px 0;
+font-size: 48px;
+color: #ed2d34;
+font-weight: bold;
+}
+
+/* PRODUCT NAVIGATION */
+#modal .product-navigation {
+display: flex;
+justify-content: flex-end;
+}
+
+#modal .product-navigation button {
+width: 40px;
+height: 40px;
+margin: 10px;
+border-radius: 50%;
+text-align: center;
+background: #ffffff;
+border: solid 1px #202020;
+}
+
+#modal .product-navigation button {
+font-size: 20px;
+}
+
+
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  color: black;
+  margin-top: 30%;
+  margin-right: 2%;
+}
+.main-color {
+  color: red;
+}
+
+h3 {
+  font-size: 30px;
+
+  margin: 40px;
+  display: flex;
+}
+
+.testimonial-img {
+  max-width: 70px;
+  border-radius: 50%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  margin: 30px auto 20px auto;
+}
+
+.page-header-container{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  flex-direction: column;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 50px;
+  padding: 30px;
+
+}
+.page-subtitle {
+  font-size: 48px;
+  color: rgb(237, 45, 52);
+}
+.testimonial-message {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 25px;
+  text-align: center;
+  color: blue;
+  overflow-wrap: break-word;
+  font-family: sans-serif;
+}
+
+#testimonialPage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-size: cover;
+}
+
+.section{
+  flex-direction: column;
+  display: flex;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#contact-form{
+  display: flex;
+  align-items: right;
+  flex-direction: column;
+  padding: 5%;
+  float: right;
+  width: 50%;
+}
+
+.contact-input{
+  padding: 5%;
+  margin: 3%;
+  border: none;
+  border-bottom: solid;
+}
+.button{
+font-size: 16px;
+margin-top: 20px;
+color: #464646;
+font-weight: bold;
+padding: 15px 48px;
+border-radius: 50px;
+text-decoration: none;
+background:transparent;
+text-transform:uppercase ;
+border: 2px solid #464646;
+
+}
